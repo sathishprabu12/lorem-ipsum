@@ -1,6 +1,18 @@
 # Lorem Ipsum
 Demo Project created using Angular Material theme
 
+## SETUP and USAGE
+The steps below will take you through cloning your own fork, installing dependencies and building:
+
+Clone our repository. To use Git from command line, see the Setting up Git repo articles.
+git clone https://github.com/sathishprabu12/lorem-ipsum.git
+Open your copied repo folder in terminal and install necessary modules with command, make sure that you have installed npm:
+npm install
+Install npm install 
+Now you are able to run or build the project:
+Run npm start or ng serve for a dev server. Navigate to http://localhost:4200/. 
+The app will automatically reload if you change any of the source files.
+
 ![image](https://github.com/sathishprabu12/lorem-ipsum/assets/70429657/ac167319-094c-4a45-9660-381a0c5bef42)
 
 ![image](https://github.com/sathishprabu12/lorem-ipsum/assets/70429657/c7bc90b6-bc8b-4061-8321-63dfc91e286f)
