@@ -1,2 +1,2 @@
 # lorem-ipsum
- Lorem ipsum
+Demo Project created using Angular Material theme
