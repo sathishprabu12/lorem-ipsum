@@ -1,0 +1,44 @@
+@import '~src/scss/variables';
+.location-icon {
+  color: $primary-color;
+}
+.white{
+  background-color:$white;
+}
+
+.header-text{ 
+  font-weight:700;
+  font-size: 16px;
+  line-height: 19.49px;
+  padding-left: 5px;
+  color: #506E85;
+
+}
+.header-desc{
+  font-size: 14px;
+  margin-top: 12px;
+  color: #506E85;
+  background-color: #F0F5FB;
+  padding: 10px;
+}
+.header-image {
+  background-image: url('../../../../assets/images/bx_bxs-widget.svg');
+  width: 17px;
+  height: 17px;
+  background-size: cover;
+  float: left;
+  margin-right: 5px
+}
+.mat-image-style{
+  padding: 20px 20px 0 40px;
+  width: 133px;
+  height: 73px;
+}
+
+mat-card-content{
+  margin-left: 20px;
+  color: #506E85;
+}
+.mat-icon.mat-primary{
+  color: #47A1F6;
+}

@@ -1,0 +1,13 @@
+<mat-nav-list class="mat-nav-list-header"> Menu </mat-nav-list>
+
+<mat-nav-list>
+  <a
+    *ngFor="let item of routes"
+    mat-list-item
+    [routerLinkActive]="'active'"
+    [routerLink]="['/', item.path]"
+  >
+    <span class="material-icons color pl10"> widgets </span>
+    <span class="color menu">{{ item.data.text }}</span>
+  </a>
+</mat-nav-list>

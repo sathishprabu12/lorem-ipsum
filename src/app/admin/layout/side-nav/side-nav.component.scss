@@ -1,0 +1,61 @@
+@import '~src/scss/variables'; 
+ 
+.mat-nav-list {
+  width: 90%;
+  a {
+      .mat-icon {          
+          color: $primary-color;
+      }
+      display: block;
+  }
+}
+
+.color{
+    color: $primary-color; 
+    font-size: 18px;
+}
+.menu{     
+    font-size: 14px;  
+    font-weight: 500;  
+}
+.material-icons{
+    margin-right: 15px;   
+}
+
+.header-image {
+    background-image: url('../../../../assets/images/bx_bxs-widget.svg');
+    width: 17px;
+    height: 17px;
+    background-size: cover;
+    margin-right:10px;
+  }
+.mat-nav-list-header{
+    padding: 10px;
+    border-bottom: #fafafa 2px solid;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.17px;
+}
+.nested-menu {
+  .nested {
+      list-style-type: none;
+  }
+  .submenu {
+      display: none;
+      height: 0;
+  }
+  & .expand {
+      &.submenu {
+          display: block;
+          list-style-type: none;
+          height: auto;
+          margin: 0;
+          li {
+              a {
+                  padding: 10px;
+                  display: block;
+              }
+          }
+      }
+  }
+}

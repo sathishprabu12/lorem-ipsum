@@ -1,0 +1,16 @@
+<div class="card-data m10">
+    <div class="card" *ngFor="let item of List">
+        <mat-card class="mt-2" >
+            <div><img class="overlay"  src="../../../../assets/images/Group.svg"></div>
+            <div class="pl45"><img  mat-card-image [src]="item.image"></div>
+            <mat-card-header>            
+                <mat-card-title class="color"> {{item.name}} </mat-card-title>
+                <mat-card-subtitle
+                >{{ item.designation }} </mat-card-subtitle>
+            </mat-card-header>
+            
+        </mat-card>
+    </div>
+   
+</div>
+ 

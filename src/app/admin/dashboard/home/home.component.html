@@ -1,0 +1,64 @@
+<mat-card class="mb10">
+  <div mat-card-avatar class="header-image"></div>
+  <div class="header-text">Home</div>
+
+  <div class="header-desc">Home Page Description</div>
+</mat-card>
+
+<div
+  class="pt10"
+  fxLayout="row wrap"
+  fxLayout.xs="column"
+  fxLayoutAlign="space-between stretch"
+>
+  <div class="mb10" fxFlex="24" fxFlex.lt-lg="49">
+    <app-stat
+      [icon]="'shopping_cart'"
+      [count]="345"
+      [label]="'Total Orders'"
+    ></app-stat>
+  </div>
+  <div class="mb10" fxFlex="24" fxFlex.lt-lg="49">
+    <app-stat
+      [icon]="'account_balance_wallet'"
+      [count]="267"
+      [label]="'Total Expenses'"
+    ></app-stat>
+  </div>
+  <div class="mb10" fxFlex="24" fxFlex.lt-lg="49">
+    <app-stat
+      [icon]="'addchart'"
+      [count]="345"
+      [label]="'Total Revenue'"
+    ></app-stat>
+  </div>
+  <div class="mb10" fxFlex="24" fxFlex.lt-lg="49">
+    <app-stat
+      [icon]="'perm_identity'"
+      [count]="345"
+      [label]="'New Users'"
+    ></app-stat>
+  </div>
+</div>
+
+<div
+  class="mt10 white"
+  fxLayout="row"
+  fxLayoutAlign="space-between stretch"
+  fxLayout.lt-md="column"
+  fxLayoutGap="20px"
+>
+  <div class="white" fxFlex fxlayoutgap="0px" *ngFor="let item of places">
+    <div class="mat-image-style mt20">
+      <img mat-card-image [src]="item.imgSrc" />
+    </div>
+
+    <div>
+      <h3 class="ml20">{{ item.name }}</h3>
+    </div>
+
+    <mat-card-content class="pr10">
+      {{ item.description }}
+    </mat-card-content>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+@import '~src/scss/variables';
+.location-icon {
+  color: $primary-color;
+}
+.white{
+  background-color:$white;
+}
+.header-text{ 
+    font-weight:700;
+    font-size: 16px;
+    line-height: 19.49px;
+    padding-left: 5px;
+    color: #506E85;
+  
+  }
+  .header-desc{
+    font-size: 14px;
+    margin-top: 12px;
+    color: #506E85;
+    background-color: #F0F5FB;
+    padding: 10px;
+  }
+  .header-image {
+    background-image: url('../../../assets/images/bx_bxs-widget.svg');
+    width: 17px;
+    height: 17px;
+    background-size: cover;
+    float: left;
+    margin-right: 5px
+  }
+  
+.mat-image-style{
+  padding: 20px 20px 0 40px;
+ 
+}
+.mat-card-sm-image {
+  width: 250px;
+  height: 200px;
+}
+
+mat-card-content{
+  color: #506E85;
+}
+
+.card-data {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 49%;
+  padding-right: 1%;
+  padding-top: 1%;
+  color: white; 
+}
+
+:host ::ng-deep .mat-button-toggle-label-content{
+  padding: 0 5px !important;
+  line-height: 20px !important;
+}
+

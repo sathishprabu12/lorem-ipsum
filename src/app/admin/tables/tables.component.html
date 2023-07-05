@@ -1,0 +1,26 @@
+<mat-card class="mat-margin-10">
+  <div mat-card-avatar class="header-image"></div>
+  <div class="header-text">
+    Users
+    <div style="float: right">
+      <div>
+        <mat-button-toggle-group
+          #colorToggle="matButtonToggleGroup"
+          value="list"
+          aria-label="Change color"
+        >
+          <mat-button-toggle class="table-button" value="list" (change)="onValChange($event.value)"
+            ><span class="material-icons"> list </span></mat-button-toggle
+          >
+          <mat-button-toggle class="table-button" (change)="onValChange($event.value)" value="grid"
+            ><span class="material-icons"> view_module </span>
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-desc">Total User : 10</div>
+</mat-card>
+<app-tables-list *ngIf="tableVal == 'list'"></app-tables-list>
+<app-tables-grid *ngIf="tableVal == 'grid'"></app-tables-grid>

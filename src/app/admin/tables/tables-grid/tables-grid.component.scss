@@ -1,0 +1,27 @@
+@import '~src/scss/variables';
+.mat-card-image{
+    width: 120px;
+    height: 120px;
+    margin-top:0px
+}
+.color{
+    color: $primary-color;
+}
+.overlay{
+    position: absolute;
+    top: 100px;
+    left: 130px;
+}
+.card-data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 19%;
+    padding-right: 1%;
+    padding-top: 1%;
+    color: white; 
+  }

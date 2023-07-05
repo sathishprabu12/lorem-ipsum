@@ -1,0 +1,27 @@
+@import '~src/scss/variables';
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5em;
+  }
+  
+  .mat-header-cell {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+  
+  tr.mat-row, tr.mat-footer-row {
+    height: 75px;
+  }
+  
+  .mat-row:nth-child(4n+1) {
+    background: #F8FBFD;
+  }
+  
+  .mat-row:nth-child(4n+3) {
+    background: #FFFFFF;
+  }
